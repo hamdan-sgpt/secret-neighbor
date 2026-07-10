@@ -456,9 +456,9 @@ public class NeighborAbilityListener implements Listener {
                 ticks += 2;
                 childSnp.incrementGrabProgress();
 
-                // Progressive vision constriction using custom font vignettes (25 frames)
-                int frameIndex = (ticks / 4) + 1;
-                frameIndex = Math.min(25, Math.max(1, frameIndex));
+                // Progressive vision constriction using custom font vignettes (50 frames)
+                int frameIndex = (ticks / 2) + 1;
+                frameIndex = Math.min(50, Math.max(1, frameIndex));
                 char vignetteChar = (char) (0xE000 + frameIndex);
                 ch.sendTitle(String.valueOf(vignetteChar), "", 0, 5, 0);
 
