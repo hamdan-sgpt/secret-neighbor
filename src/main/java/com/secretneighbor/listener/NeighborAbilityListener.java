@@ -456,20 +456,11 @@ public class NeighborAbilityListener implements Listener {
                 ticks += 2;
                 childSnp.incrementGrabProgress();
 
-                // Progressive vision constriction using custom font vignettes (no potion effects)
-                String vignetteChar;
-                if (ticks < 12) {
-                    vignetteChar = "\uE001";
-                } else if (ticks < 24) {
-                    vignetteChar = "\uE002";
-                } else if (ticks < 36) {
-                    vignetteChar = "\uE003";
-                } else if (ticks < 48) {
-                    vignetteChar = "\uE004";
-                } else {
-                    vignetteChar = "\uE005";
-                }
-                ch.sendTitle(vignetteChar, "", 0, 5, 0);
+                // Progressive vision constriction using custom font vignettes (15 frames)
+                int frameIndex = (ticks / 4) + 1;
+                frameIndex = Math.min(15, Math.max(1, frameIndex));
+                char vignetteChar = (char) (0xE000 + frameIndex);
+                ch.sendTitle(String.valueOf(vignetteChar), "", 0, 5, 0);
 
                 int percent = (ticks * 100) / CAPTURE_TICKS;
                 percent = Math.min(percent, 100);
