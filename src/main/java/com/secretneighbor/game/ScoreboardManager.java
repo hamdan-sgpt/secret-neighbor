@@ -124,6 +124,7 @@ public class ScoreboardManager {
 
         lines.add("§7------------------  ");
         lines.add("§eplugin by hams");
+        lines.add("§cYT: @hamdanganteng");
 
         // Set the lines from top to bottom (teams line_10 down to line_1)
         int score = 10;
