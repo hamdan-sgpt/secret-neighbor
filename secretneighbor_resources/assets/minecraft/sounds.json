@@ -1,0 +1,11 @@
+{
+  "secretneighbor.chase": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "minecraft:chase",
+        "stream": true
+      }
+    ]
+  }
+}

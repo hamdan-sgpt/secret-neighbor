@@ -106,7 +106,7 @@ public class AtmosphereManager {
         for (UUID uuid : activeChasePlayers) {
             Player p = Bukkit.getPlayer(uuid);
             if (p != null) {
-                p.stopSound(Sound.MUSIC_DISC_PRECIPICE);
+                p.stopSound("secretneighbor.chase");
             }
         }
         activeChasePlayers.clear();
@@ -339,8 +339,8 @@ public class AtmosphereManager {
                 // Play warning roar and start chase BGM if they just entered chase
                 if (!activeChasePlayers.contains(child.getUniqueId())) {
                     child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_ANGRY, 0.4f, 1.2f);
-                    // Play Precipice music disc attached directly to the child so it follows them
-                    child.playSound(child, Sound.MUSIC_DISC_PRECIPICE, 0.8f, 1.0f);
+                    // Play custom chase sound attached directly to the child so it follows them
+                    child.playSound(child, "secretneighbor.chase", org.bukkit.SoundCategory.RECORDS, 0.8f, 1.0f);
                 }
             }
         }
@@ -350,7 +350,7 @@ public class AtmosphereManager {
             if (!currentChase.contains(uuid)) {
                 Player p = Bukkit.getPlayer(uuid);
                 if (p != null) {
-                    p.stopSound(Sound.MUSIC_DISC_PRECIPICE);
+                    p.stopSound("secretneighbor.chase");
                 }
                 activeChasePlayers.remove(uuid);
             }
