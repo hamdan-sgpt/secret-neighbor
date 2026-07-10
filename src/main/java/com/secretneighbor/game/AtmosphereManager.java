@@ -34,6 +34,9 @@ public class AtmosphereManager {
     // Track previous positions for movement detection
     private final Map<UUID, Location> previousLocations = new HashMap<>();
 
+    // Active chase music players
+    private final Set<UUID> activeChasePlayers = new HashSet<>();
+
     // Ambient sound timer
     private int ambientCooldown = 0;
     private final Random random = new Random();
@@ -96,6 +99,17 @@ public class AtmosphereManager {
         }
         previousLocations.clear();
         ambientCooldown = 0;
+        clearAllChases();
+    }
+
+    private void clearAllChases() {
+        for (UUID uuid : activeChasePlayers) {
+            Player p = Bukkit.getPlayer(uuid);
+            if (p != null) {
+                p.stopSound(Sound.MUSIC_DISC_PRECIPICE);
+            }
+        }
+        activeChasePlayers.clear();
     }
 
     // =========================================================================
@@ -271,15 +285,18 @@ public class AtmosphereManager {
                 break;
             }
         }
-        if (neighbor == null) return;
 
-        boolean isBapake = neighborSnp.isBapakeMode();
-        // If not in Bapake mode (i.e., disguised), do not run heartbeat effects!
-        if (!isBapake) {
+        // If neighbor is null/not alive or not in Bapake mode, clear all active chases and return
+        if (neighbor == null || neighborSnp == null || !neighborSnp.isBapakeMode()) {
+            clearAllChases();
             return;
         }
 
+        boolean isBapake = neighborSnp.isBapakeMode();
         boolean isDisguised = neighborSnp.isDisguised();
+
+        // Keep track of players in chase this tick
+        Set<UUID> currentChase = new HashSet<>();
 
         for (SNPlayer childSnp : plugin.getGameManager().getSNPlayers()) {
             if (!childSnp.isChild() || !childSnp.isAlive()) continue;
@@ -317,10 +334,30 @@ public class AtmosphereManager {
 
             // Tier 4: Extreme danger — Bapake mode chase (< 10 blocks while revealed)
             if (isBapake && dist < 10.0) {
-                // Intense chase audio
-                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_ANGRY, 0.3f, 1.2f);
+                currentChase.add(child.getUniqueId());
+                
+                // Play warning roar and start chase BGM if they just entered chase
+                if (!activeChasePlayers.contains(child.getUniqueId())) {
+                    child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_ANGRY, 0.4f, 1.2f);
+                    // Play Precipice music disc attached directly to the child so it follows them
+                    child.playSound(child, Sound.MUSIC_DISC_PRECIPICE, 0.8f, 1.0f);
+                }
             }
         }
+
+        // Stop BGM for players who left the chase
+        for (UUID uuid : new ArrayList<>(activeChasePlayers)) {
+            if (!currentChase.contains(uuid)) {
+                Player p = Bukkit.getPlayer(uuid);
+                if (p != null) {
+                    p.stopSound(Sound.MUSIC_DISC_PRECIPICE);
+                }
+                activeChasePlayers.remove(uuid);
+            }
+        }
+
+        // Update active chase list
+        activeChasePlayers.addAll(currentChase);
     }
 
     // =========================================================================
