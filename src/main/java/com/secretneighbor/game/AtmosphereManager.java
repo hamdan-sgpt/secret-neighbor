@@ -300,9 +300,6 @@ public class AtmosphereManager {
                 float volume = isDisguised ? 0.35f : 0.6f;
                 float pitch = 1.0f;
                 child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, volume, pitch);
-
-                // Brief darkness flash
-                child.addPotionEffect(new PotionEffect(PotionEffectType.DARKNESS, 25, 0, false, false));
             }
 
             // Tier 3: Close danger (< 6 blocks)
@@ -316,9 +313,6 @@ public class AtmosphereManager {
                         child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, volume * 0.8f, 1.8f);
                     }
                 }, 5L);
-
-                // Longer darkness
-                child.addPotionEffect(new PotionEffect(PotionEffectType.DARKNESS, 35, 0, false, false));
             }
 
             // Tier 4: Extreme danger — Bapake mode chase (< 10 blocks while revealed)
