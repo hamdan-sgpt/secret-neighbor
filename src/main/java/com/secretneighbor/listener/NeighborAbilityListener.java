@@ -325,6 +325,9 @@ public class NeighborAbilityListener implements Listener {
         childSnp.setGrabbedByUuid(player.getUniqueId());
         childSnp.setStruggleCount(0);
         childSnp.setGrabStartTime(System.currentTimeMillis());
+        
+        // Show first vignette frame instantly when grab succeeds
+        targetChild.sendTitle("\uE001", "", 0, 10, 0);
 
         // Heavy Bones: Extra slowness if Bagger
         boolean isBagger = childSnp.getChildClass() == ChildClass.BAGGER;
