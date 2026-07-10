@@ -389,7 +389,7 @@ public class NeighborAbilityListener implements Listener {
     private void startGrabCountdown(Player neighbor, Player child, SNPlayer neighborSnp, SNPlayer childSnp, boolean isBagger) {
         new BukkitRunnable() {
             int ticks = 0;
-            final int CAPTURE_TICKS = 60; // 3 seconds at 2-tick intervals = 60 ticks
+            final int CAPTURE_TICKS = 100; // 5 seconds at 2-tick intervals = 100 ticks
             int lastStruggleCount = 0;
 
             @Override
@@ -456,9 +456,9 @@ public class NeighborAbilityListener implements Listener {
                 ticks += 2;
                 childSnp.incrementGrabProgress();
 
-                // Progressive vision constriction using custom font vignettes (15 frames)
+                // Progressive vision constriction using custom font vignettes (25 frames)
                 int frameIndex = (ticks / 4) + 1;
-                frameIndex = Math.min(15, Math.max(1, frameIndex));
+                frameIndex = Math.min(25, Math.max(1, frameIndex));
                 char vignetteChar = (char) (0xE000 + frameIndex);
                 ch.sendTitle(String.valueOf(vignetteChar), "", 0, 5, 0);
 

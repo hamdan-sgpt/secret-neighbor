@@ -134,6 +134,96 @@
       "chars": [
         "\ue00f"
       ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_16.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue010"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_17.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue011"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_18.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue012"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_19.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue013"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_20.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue014"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_21.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue015"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_22.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue016"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_23.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue017"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_24.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue018"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_25.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue019"
+      ]
     }
   ]
 }
