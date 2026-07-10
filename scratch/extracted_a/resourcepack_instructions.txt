@@ -1,0 +1,68 @@
+========================================================================
+             SECRET NEIGHBOR MINIGAME - RESOURCE PACK GUIDE
+========================================================================
+
+Folder ini berisi struktur dasar Minecraft Resource Pack yang dikonfigurasi
+untuk plugin Secret Neighbor Anda menggunakan Custom Model Data.
+
+------------------------------------------------------------------------
+1. DAFTAR PEMETAAN CUSTOM MODEL DATA (CMD)
+------------------------------------------------------------------------
+
+Setiap item kustom yang di-spawn oleh plugin didaftarkan ke material dasar
+Minecraft dengan ID Custom Model Data unik:
+
+| Item Name            | Material Dasar   | CMD ID | File Model Tujuan (assets/secretneighbor/models/item/) |
+|----------------------|------------------|--------|--------------------------------------------------------|
+| Red Key              | TRIPWIRE_HOOK    | 100    | key_red.json                                           |
+| Blue Key             | TRIPWIRE_HOOK    | 101    | key_blue.json                                          |
+| Green Key            | TRIPWIRE_HOOK    | 102    | key_green.json                                         |
+| Yellow Key           | TRIPWIRE_HOOK    | 103    | key_yellow.json                                         |
+| Purple Key           | TRIPWIRE_HOOK    | 104    | key_purple.json                                         |
+| Orange Key           | TRIPWIRE_HOOK    | 105    | key_orange.json                                         |
+| Access Keycard       | TRIPWIRE_HOOK    | 106    | keycard.json                                           |
+|                      |                  |        |                                                        |
+| Baseball Bat         | STICK            | 200    | baseball_bat.json                                      |
+| Camera               | SPYGLASS         | 201    | camera.json                                            |
+| Bagger's Backpack    | LEATHER          | 202    | backpack.json                                          |
+| Megaphone            | GOAT_HORN        | 203    | megaphone.json                                         |
+| Wrench               | IRON_INGOT       | 204    | wrench.json                                            |
+| Slingshot            | BOW              | 205    | slingshot.json                                         |
+| Motion Sensor        | REDSTONE_TORCH   | 206    | motion_sensor.json                                     |
+| Decoy Console        | CLOCK            | 207    | decoy_console.json                                     |
+|                      |                  |        |                                                        |
+| Bear Trap            | IRON_TRAPDOOR    | 300    | bear_trap.json                                         |
+| Radar Detector       | COMPASS          | 301    | radar.json                                             |
+| Neighbor Mask        | PUMPKIN          | 302    | neighbor_mask.json                                     |
+|                      |                  |        |                                                        |
+| Cardboard Box        | BROWN_DYE        | 500    | cardboard_box.json                                     |
+
+------------------------------------------------------------------------
+2. CARA MENAMBAHKAN MODEL 3D & TEKSTUR ANDA
+------------------------------------------------------------------------
+
+A. File Model 3D (Blockbench .json):
+   - Jika Anda memiliki model 3D Blockbench untuk Kardus, Bat, Kamera, Kunci, dll.
+   - Ekspor model tersebut dari Blockbench sebagai ".json" model item Minecraft.
+   - Pindahkan file model tersebut ke folder:
+     `assets/secretneighbor/models/item/`
+   - Beri nama file sesuai dengan nama pada tabel di atas (misalnya `cardboard_box.json` untuk Kardus).
+
+B. File Tekstur (.png):
+   - Pindahkan gambar tekstur .png dari model Anda ke folder:
+     `assets/secretneighbor/textures/item/`
+   - Pastikan di dalam file model .json Anda, path teksturnya mengarah ke:
+     `secretneighbor:item/nama_file_tekstur`
+
+------------------------------------------------------------------------
+3. CARA MEMASANG DI MINECRAFT
+------------------------------------------------------------------------
+
+1. Zip seluruh isi dari folder `resourcepack/` (bukan folder luarnya, melainkan
+   file `pack.mcmeta` dan folder `assets` berada di root file ZIP).
+2. Buka Minecraft, masuk ke Options -> Resource Packs -> Open Pack Folder.
+3. Taruh file ZIP hasil kompresi tersebut ke dalam folder tersebut.
+4. Aktifkan resource pack tersebut di dalam game.
+
+Sekarang, semua item kustom di plugin Secret Neighbor akan menampilkan model 3D
+dan tekstur kustom Anda secara otomatis!

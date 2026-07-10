@@ -1,0 +1,300 @@
+{
+  "textures": {
+    "fabric": "minecraft:block/throwable/pillow"
+  },
+  "elements": [
+    {
+      "__comment": "Pillow body - main soft block",
+      "from": [
+        3.5,
+        5.5,
+        3.5
+      ],
+      "to": [
+        12.5,
+        8,
+        12.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#fabric"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#fabric"
+        },
+        "north": {
+          "uv": [
+            2,
+            8,
+            14,
+            13
+          ],
+          "texture": "#fabric"
+        },
+        "south": {
+          "uv": [
+            2,
+            8,
+            14,
+            13
+          ],
+          "texture": "#fabric"
+        },
+        "west": {
+          "uv": [
+            2,
+            8,
+            14,
+            13
+          ],
+          "texture": "#fabric"
+        },
+        "east": {
+          "uv": [
+            2,
+            8,
+            14,
+            13
+          ],
+          "texture": "#fabric"
+        }
+      }
+    },
+    {
+      "__comment": "Pillow puff - top center",
+      "from": [
+        4,
+        7.5,
+        4
+      ],
+      "to": [
+        12,
+        8.5,
+        12
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            3,
+            3,
+            13,
+            13
+          ],
+          "texture": "#fabric"
+        },
+        "north": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#fabric"
+        },
+        "south": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#fabric"
+        },
+        "west": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#fabric"
+        },
+        "east": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#fabric"
+        }
+      }
+    },
+    {
+      "__comment": "Pillow puff - bottom center",
+      "from": [
+        4,
+        5,
+        4
+      ],
+      "to": [
+        12,
+        6,
+        12
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            3,
+            13,
+            13
+          ],
+          "texture": "#fabric"
+        },
+        "north": {
+          "uv": [
+            3,
+            13,
+            13,
+            14
+          ],
+          "texture": "#fabric"
+        },
+        "south": {
+          "uv": [
+            3,
+            13,
+            13,
+            14
+          ],
+          "texture": "#fabric"
+        },
+        "west": {
+          "uv": [
+            3,
+            13,
+            13,
+            14
+          ],
+          "texture": "#fabric"
+        },
+        "east": {
+          "uv": [
+            3,
+            13,
+            13,
+            14
+          ],
+          "texture": "#fabric"
+        }
+      }
+    }
+  ],
+  "display": {
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        1
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        1,
+        2,
+        1
+      ],
+      "scale": [
+        0.45,
+        0.45,
+        0.45
+      ]
+    }
+  }
+}

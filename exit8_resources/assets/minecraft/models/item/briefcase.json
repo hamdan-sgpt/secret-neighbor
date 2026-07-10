@@ -1,0 +1,92 @@
+{
+  "textures": {
+    "body": "minecraft:item/briefcase_body",
+    "handle": "minecraft:item/briefcase_handle"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, -3.5, 0.5 ],
+      "scale": [ 0.85, 0.85, 0.85 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, -3.5, 0.5 ],
+      "scale": [ 0.85, 0.85, 0.85 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, -3.0, 1.0 ],
+      "scale": [ 0.6, 0.6, 0.6 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, -3.0, 1.0 ],
+      "scale": [ 0.6, 0.6, 0.6 ]
+    },
+    "gui": {
+      "rotation": [ 30, 225, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.65, 0.65, 0.65 ]
+    },
+    "fixed": {
+      "rotation": [ 0, 180, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    }
+  },
+  "elements": [
+    {
+      "name": "body",
+      "from": [ 3, 3, 6.5 ],
+      "to": [ 13, 10, 9.5 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 10, 3 ], "texture": "#body" },
+        "up":    { "uv": [ 0, 0, 10, 3 ], "texture": "#body" },
+        "north": { "uv": [ 0, 0, 10, 7 ], "texture": "#body" },
+        "south": { "uv": [ 0, 0, 10, 7 ], "texture": "#body" },
+        "west":  { "uv": [ 0, 0, 3, 7 ],  "texture": "#body" },
+        "east":  { "uv": [ 0, 0, 3, 7 ],  "texture": "#body" }
+      }
+    },
+    {
+      "name": "left_handle_holder",
+      "from": [ 5, 10, 7.5 ],
+      "to": [ 6, 11, 8.5 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "up":    { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "north": { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "south": { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "west":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "east":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" }
+      }
+    },
+    {
+      "name": "right_handle_holder",
+      "from": [ 10, 10, 7.5 ],
+      "to": [ 11, 11, 8.5 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "up":    { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "north": { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "south": { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "west":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "east":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" }
+      }
+    },
+    {
+      "name": "handle_grip",
+      "from": [ 5, 11, 7.5 ],
+      "to": [ 11, 12, 8.5 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 6, 1 ], "texture": "#handle" },
+        "up":    { "uv": [ 0, 0, 6, 1 ], "texture": "#handle" },
+        "north": { "uv": [ 0, 0, 6, 1 ], "texture": "#handle" },
+        "south": { "uv": [ 0, 0, 6, 1 ], "texture": "#handle" },
+        "west":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" },
+        "east":  { "uv": [ 0, 0, 1, 1 ], "texture": "#handle" }
+      }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "textures": {
+    "red": "minecraft:block/throwable/tomato",
+    "leaf": "minecraft:block/throwable/tomato_leaf"
+  },
+  "elements": [
+    {
+      "__comment": "Tomato Body - main sphere",
+      "from": [
+        5.5,
+        4,
+        5.5
+      ],
+      "to": [
+        10.5,
+        8.5,
+        10.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            3,
+            13,
+            13
+          ],
+          "texture": "#red"
+        },
+        "up": {
+          "uv": [
+            3,
+            3,
+            13,
+            13
+          ],
+          "texture": "#red"
+        },
+        "north": {
+          "uv": [
+            3,
+            2,
+            13,
+            12
+          ],
+          "texture": "#red"
+        },
+        "south": {
+          "uv": [
+            3,
+            2,
+            13,
+            12
+          ],
+          "texture": "#red"
+        },
+        "west": {
+          "uv": [
+            3,
+            2,
+            13,
+            12
+          ],
+          "texture": "#red"
+        },
+        "east": {
+          "uv": [
+            3,
+            2,
+            13,
+            12
+          ],
+          "texture": "#red"
+        }
+      }
+    },
+    {
+      "__comment": "Tomato Body - wider middle band",
+      "from": [
+        5,
+        4.5,
+        5
+      ],
+      "to": [
+        11,
+        8,
+        11
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#red"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#red"
+        },
+        "north": {
+          "uv": [
+            2,
+            3,
+            14,
+            11
+          ],
+          "texture": "#red"
+        },
+        "south": {
+          "uv": [
+            2,
+            3,
+            14,
+            11
+          ],
+          "texture": "#red"
+        },
+        "west": {
+          "uv": [
+            2,
+            3,
+            14,
+            11
+          ],
+          "texture": "#red"
+        },
+        "east": {
+          "uv": [
+            2,
+            3,
+            14,
+            11
+          ],
+          "texture": "#red"
+        }
+      }
+    },
+    {
+      "__comment": "Tomato Body - front/back extension",
+      "from": [
+        5.5,
+        4.5,
+        4.5
+      ],
+      "to": [
+        10.5,
+        8,
+        11.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            1,
+            13,
+            15
+          ],
+          "texture": "#red"
+        },
+        "up": {
+          "uv": [
+            3,
+            1,
+            13,
+            15
+          ],
+          "texture": "#red"
+        },
+        "north": {
+          "uv": [
+            3,
+            3,
+            13,
+            11
+          ],
+          "texture": "#red"
+        },
+        "south": {
+          "uv": [
+            3,
+            3,
+            13,
+            11
+          ],
+          "texture": "#red"
+        },
+        "west": {
+          "uv": [
+            1,
+            3,
+            15,
+            11
+          ],
+          "texture": "#red"
+        },
+        "east": {
+          "uv": [
+            1,
+            3,
+            15,
+            11
+          ],
+          "texture": "#red"
+        }
+      }
+    },
+    {
+      "__comment": "Stem - small green cylinder",
+      "from": [
+        7.5,
+        8.5,
+        7.5
+      ],
+      "to": [
+        8.5,
+        9.5,
+        8.5
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            6,
+            6,
+            10,
+            10
+          ],
+          "texture": "#leaf"
+        },
+        "north": {
+          "uv": [
+            6,
+            4,
+            10,
+            8
+          ],
+          "texture": "#leaf"
+        },
+        "south": {
+          "uv": [
+            6,
+            4,
+            10,
+            8
+          ],
+          "texture": "#leaf"
+        },
+        "west": {
+          "uv": [
+            6,
+            4,
+            10,
+            8
+          ],
+          "texture": "#leaf"
+        },
+        "east": {
+          "uv": [
+            6,
+            4,
+            10,
+            8
+          ],
+          "texture": "#leaf"
+        }
+      }
+    },
+    {
+      "__comment": "Leaf 1 - small cross leaf",
+      "from": [
+        6.5,
+        8.5,
+        7.5
+      ],
+      "to": [
+        9.5,
+        8.8,
+        8.5
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            4,
+            6,
+            12,
+            10
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            4,
+            6,
+            12,
+            10
+          ],
+          "texture": "#leaf"
+        }
+      }
+    },
+    {
+      "__comment": "Leaf 2 - perpendicular cross leaf",
+      "from": [
+        7.5,
+        8.5,
+        6.5
+      ],
+      "to": [
+        8.5,
+        8.8,
+        9.5
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            4,
+            6,
+            12,
+            10
+          ],
+          "texture": "#leaf"
+        },
+        "down": {
+          "uv": [
+            4,
+            6,
+            12,
+            10
+          ],
+          "texture": "#leaf"
+        }
+      }
+    }
+  ],
+  "display": {
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.85,
+        0.85,
+        0.85
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        1,
+        2,
+        1
+      ],
+      "scale": [
+        0.55,
+        0.55,
+        0.55
+      ]
+    }
+  }
+}

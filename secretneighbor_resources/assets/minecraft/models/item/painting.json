@@ -1,0 +1,409 @@
+{
+  "textures": {
+    "frame": "block/oak_planks",
+    "canvas": "minecraft:block/throwable/painting_canvas"
+  },
+  "elements": [
+    {
+      "__comment": "Frame Board - back",
+      "from": [
+        2,
+        2,
+        7.5
+      ],
+      "to": [
+        14,
+        14,
+        8.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            1,
+            7,
+            15,
+            9
+          ],
+          "texture": "#frame"
+        },
+        "up": {
+          "uv": [
+            1,
+            7,
+            15,
+            9
+          ],
+          "texture": "#frame"
+        },
+        "north": {
+          "uv": [
+            1,
+            1,
+            15,
+            15
+          ],
+          "texture": "#frame"
+        },
+        "south": {
+          "uv": [
+            1,
+            1,
+            15,
+            15
+          ],
+          "texture": "#frame"
+        },
+        "west": {
+          "uv": [
+            7,
+            1,
+            9,
+            15
+          ],
+          "texture": "#frame"
+        },
+        "east": {
+          "uv": [
+            7,
+            1,
+            9,
+            15
+          ],
+          "texture": "#frame"
+        }
+      }
+    },
+    {
+      "__comment": "Canvas - painting surface (front)",
+      "from": [
+        3,
+        3,
+        7
+      ],
+      "to": [
+        13,
+        13,
+        7.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            1,
+            15,
+            15
+          ],
+          "texture": "#canvas"
+        }
+      }
+    },
+    {
+      "__comment": "Frame border - top",
+      "from": [
+        1.5,
+        13.5,
+        7
+      ],
+      "to": [
+        14.5,
+        14.5,
+        9
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": "#frame"
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ],
+          "texture": "#frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ],
+          "texture": "#frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "texture": "#frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2,
+            1
+          ],
+          "texture": "#frame"
+        }
+      }
+    },
+    {
+      "__comment": "Frame border - bottom",
+      "from": [
+        1.5,
+        1.5,
+        7
+      ],
+      "to": [
+        14.5,
+        2.5,
+        9
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            14,
+            16,
+            16
+          ],
+          "texture": "#frame"
+        },
+        "north": {
+          "uv": [
+            0,
+            15,
+            16,
+            16
+          ],
+          "texture": "#frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            15,
+            16,
+            16
+          ],
+          "texture": "#frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            15,
+            2,
+            16
+          ],
+          "texture": "#frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            15,
+            2,
+            16
+          ],
+          "texture": "#frame"
+        }
+      }
+    },
+    {
+      "__comment": "Frame border - left",
+      "from": [
+        1.5,
+        2.5,
+        7
+      ],
+      "to": [
+        2.5,
+        13.5,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            2,
+            1,
+            14
+          ],
+          "texture": "#frame"
+        },
+        "south": {
+          "uv": [
+            0,
+            2,
+            1,
+            14
+          ],
+          "texture": "#frame"
+        },
+        "west": {
+          "uv": [
+            0,
+            2,
+            2,
+            14
+          ],
+          "texture": "#frame"
+        }
+      }
+    },
+    {
+      "__comment": "Frame border - right",
+      "from": [
+        13.5,
+        2.5,
+        7
+      ],
+      "to": [
+        14.5,
+        13.5,
+        9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            15,
+            2,
+            16,
+            14
+          ],
+          "texture": "#frame"
+        },
+        "south": {
+          "uv": [
+            15,
+            2,
+            16,
+            14
+          ],
+          "texture": "#frame"
+        },
+        "east": {
+          "uv": [
+            0,
+            2,
+            2,
+            14
+          ],
+          "texture": "#frame"
+        }
+      }
+    }
+  ],
+  "display": {
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        2
+      ],
+      "scale": [
+        0.38,
+        0.38,
+        0.38
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        -45,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.42,
+        0.42,
+        0.42
+      ]
+    }
+  }
+}

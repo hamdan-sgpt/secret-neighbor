@@ -1,0 +1,85 @@
+{
+	"__comment": "Designed by KoolCatTV with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "block/materials/red",
+		"texture": "block/materials/red",
+		"silver": "block/materials/silver"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Handle Bottom",
+			"from": [ 7.25, -2.25, 8.75 ],
+			"to": [ 8.75, 0.25, 9.75 ],
+			"rotation": { "origin": [ 7.25, -2.25, 8.75 ], "axis": "x", "angle": -22.5 },
+			"faces": {
+				"down": { "uv": [ 7, 0, 8.5, 1 ], "texture": "#silver" },
+				"up": { "uv": [ 7, 15, 8.5, 16 ], "texture": "#silver" },
+				"north": { "uv": [ 7.5, 13, 9, 16 ], "texture": "#silver" },
+				"south": { "uv": [ 7, 13, 8.5, 16 ], "texture": "#silver" },
+				"west": { "uv": [ 15, 13, 16, 16 ], "texture": "#silver" },
+				"east": { "uv": [ 0, 13, 1, 16 ], "texture": "#silver" }
+			}
+		},
+		{
+			"__comment": "Handle",
+			"from": [ 7.25, 0.25, 7.5 ],
+			"to": [ 8.75, 17.75, 8.5 ],
+			"faces": {
+				"down": { "uv": [ 7.25, 7.5, 8.75, 8.5 ], "texture": "#texture" },
+				"up": { "uv": [ 7.25, 7.5, 8.75, 8.5 ], "texture": "#texture" },
+				"north": { "uv": [ 7.25, 0, 8.75, 15.75 ], "texture": "#texture" },
+				"south": { "uv": [ 7.25, 0, 8.75, 15.75 ], "texture": "#texture" },
+				"west": { "uv": [ 7.5, 0, 8.5, 15.75 ], "texture": "#texture" },
+				"east": { "uv": [ 7.5, 0, 8.5, 15.75 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Handle Top",
+			"from": [ 7.25, 16.75, 6.125 ],
+			"to": [ 8.75, 17.75, 8.625 ],
+			"rotation": { "origin": [ 7.25, 16.75, 6.125 ], "axis": "x", "angle": -22.5 },
+			"faces": {
+				"down": { "uv": [ 7, 3.5, 8.5, 6.5 ], "texture": "#silver" },
+				"up": { "uv": [ 7, 9.5, 8.5, 12.5 ], "texture": "#silver" },
+				"north": { "uv": [ 7.5, 2, 9, 3 ], "texture": "#silver" },
+				"south": { "uv": [ 7, 2, 8.5, 3 ], "texture": "#silver" },
+				"west": { "uv": [ 9.5, 2, 12.5, 3 ], "texture": "#silver" },
+				"east": { "uv": [ 3.5, 2, 6.5, 3 ], "texture": "#silver" }
+			}
+		},
+		{
+			"__comment": "Prong 1",
+			"from": [ 7.375, 16.625, 5.25 ],
+			"to": [ 7.875, 17.125, 6.25 ],
+			"rotation": { "origin": [ 7.375, 16.625, 5.25 ], "axis": "x", "angle": -22.5 },
+			"faces": {
+				"down": { "uv": [ 7, 6.5, 8, 7.5 ], "texture": "#silver" },
+				"up": { "uv": [ 7, 8.5, 8, 9.5 ], "texture": "#silver" },
+				"north": { "uv": [ 8, 1, 9, 2 ], "texture": "#silver" },
+				"south": { "uv": [ 7, 1, 8, 2 ], "texture": "#silver" },
+				"west": { "uv": [ 8.5, 1, 9.5, 2 ], "texture": "#silver" },
+				"east": { "uv": [ 6.5, 1, 7.5, 2 ], "texture": "#silver" }
+			}
+		},
+		{
+			"__comment": "Prong 2",
+			"from": [ 8.125, 16.625, 5.25 ],
+			"to": [ 8.625, 17.125, 6.25 ],
+			"rotation": { "origin": [ 8.125, 16.625, 5.25 ], "axis": "x", "angle": -22.5 },
+			"faces": {
+				"down": { "uv": [ 7, 6.5, 8, 7.5 ], "texture": "#silver" },
+				"up": { "uv": [ 7, 8.5, 8, 9.5 ], "texture": "#silver" },
+				"north": { "uv": [ 8, 1, 9, 2 ], "texture": "#silver" },
+				"south": { "uv": [ 7, 1, 8, 2 ], "texture": "#sivler" },
+				"west": { "uv": [ 8.5, 1, 9.5, 2 ], "texture": "#silver" },
+				"east": { "uv": [ 6.5, 1, 7.5, 2 ], "texture": "#silver" }
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation":  [ 0, 0, 45.5 ],
+			"translation":  [ 0.3, -0.2, 0 ]
+		}
+	}
+}

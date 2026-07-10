@@ -1,0 +1,399 @@
+{
+  "textures": {
+    "front": "minecraft:item/vending_machine_anomaly",
+    "casing": "minecraft:item/vending_machine_casing"
+  },
+  "display": {
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2.666,
+        2.666,
+        2.666
+      ]
+    }
+  },
+  "elements": [
+    {
+      "name": "casing_back",
+      "from": [
+        0,
+        0,
+        14
+      ],
+      "to": [
+        16,
+        16,
+        15
+      ],
+      "faces": {
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            14,
+            0,
+            15,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            14,
+            0,
+            15,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            0,
+            14,
+            16,
+            15
+          ],
+          "texture": "#casing"
+        },
+        "down": {
+          "uv": [
+            0,
+            14,
+            16,
+            15
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "casing_left",
+      "from": [
+        0,
+        0,
+        2.2
+      ],
+      "to": [
+        0.5,
+        16,
+        14
+      ],
+      "faces": {
+        "west": {
+          "uv": [
+            0,
+            0,
+            11.8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            11.8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            11.8
+          ],
+          "texture": "#casing"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.5,
+            11.8
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "casing_right",
+      "from": [
+        15.5,
+        0,
+        2.2
+      ],
+      "to": [
+        16,
+        16,
+        14
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            11.8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            11.8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            15.5,
+            0,
+            16,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            15.5,
+            0,
+            16,
+            11.8
+          ],
+          "texture": "#casing"
+        },
+        "down": {
+          "uv": [
+            15.5,
+            0,
+            16,
+            11.8
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "casing_bottom",
+      "from": [
+        0.5,
+        0,
+        2.2
+      ],
+      "to": [
+        15.5,
+        3,
+        14
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.5,
+            13,
+            15.5,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "down": {
+          "uv": [
+            0.5,
+            0,
+            15.5,
+            11.8
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "casing_top",
+      "from": [
+        0.5,
+        14,
+        2.2
+      ],
+      "to": [
+        15.5,
+        16,
+        14
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0.5,
+            0,
+            15.5,
+            11.8
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "top_banner",
+      "from": [
+        0,
+        14,
+        1.2
+      ],
+      "to": [
+        16,
+        16,
+        2.2
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            1
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            2
+          ],
+          "texture": "#front"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "name": "recessed_display",
+      "from": [
+        0.5,
+        3,
+        2.4
+      ],
+      "to": [
+        15.5,
+        14,
+        2.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.5,
+            2,
+            15.5,
+            13
+          ],
+          "texture": "#front"
+        }
+      }
+    },
+    {
+      "name": "bottom_tray",
+      "from": [
+        2,
+        0.5,
+        0.2
+      ],
+      "to": [
+        14,
+        3,
+        2.2
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            2,
+            0,
+            14,
+            2
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            2,
+            13,
+            14,
+            15.5
+          ],
+          "texture": "#front"
+        },
+        "west": {
+          "uv": [
+            0,
+            13,
+            2,
+            15.5
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            0,
+            13,
+            2,
+            15.5
+          ],
+          "texture": "#casing"
+        }
+      }
+    }
+  ]
+}

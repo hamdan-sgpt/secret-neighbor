@@ -1,0 +1,188 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/paper"
+    },
+    "entries": [
+      {
+        "threshold": 1000.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_0"
+        }
+      },
+      {
+        "threshold": 1001.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_1"
+        }
+      },
+      {
+        "threshold": 1002.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_2"
+        }
+      },
+      {
+        "threshold": 1003.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_3"
+        }
+      },
+      {
+        "threshold": 1004.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_4"
+        }
+      },
+      {
+        "threshold": 1005.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_5"
+        }
+      },
+      {
+        "threshold": 1006.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_6"
+        }
+      },
+      {
+        "threshold": 1007.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_7"
+        }
+      },
+      {
+        "threshold": 1008.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/exit_sign_8"
+        }
+      },
+      {
+        "threshold": 1009.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/guide_poster"
+        }
+      },
+      {
+        "threshold": 1010.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/cctv"
+        }
+      },
+      {
+        "threshold": 1011.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/fire_extinguisher"
+        }
+      },
+      {
+        "threshold": 1012.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/trash_can"
+        }
+      },
+      {
+        "threshold": 1013.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/vending_machine"
+        }
+      },
+      {
+        "threshold": 1014.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/bench"
+        }
+      },
+      {
+        "threshold": 1015.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/vending_machine_anomaly"
+        }
+      },
+      {
+        "threshold": 1016.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_1"
+        }
+      },
+      {
+        "threshold": 1017.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_2"
+        }
+      },
+      {
+        "threshold": 1018.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_3"
+        }
+      },
+      {
+        "threshold": 1019.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_4"
+        }
+      },
+      {
+        "threshold": 1020.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_5"
+        }
+      },
+      {
+        "threshold": 1021.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_eyes_normal"
+        }
+      },
+      {
+        "threshold": 1022.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_eyes_anomaly"
+        }
+      },
+      {
+        "threshold": 1023.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/poster_eyes_left"
+        }
+      },
+      {
+        "threshold": 1024.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/briefcase"
+        }
+      }
+    ]
+  }
+}

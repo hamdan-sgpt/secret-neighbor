@@ -1,0 +1,45 @@
+{
+  "textures": {
+    "body": "block/materials/silver",
+    "led": "block/materials/red"
+  },
+  "elements": [
+    {
+      "__comment": "Sensor Body",
+      "from": [6, 4, 6],
+      "to": [10, 8, 10],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#body"}
+      }
+    },
+    {
+      "__comment": "Antenna",
+      "from": [7.5, 8, 7.5],
+      "to": [8.5, 13, 8.5],
+      "faces": {
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#body"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#body"}
+      }
+    },
+    {
+      "__comment": "LED Indicator",
+      "from": [7, 12.5, 7],
+      "to": [9, 13.5, 9],
+      "faces": {
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#led"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#led"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#led"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#led"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#led"}
+      }
+    }
+  ]
+}

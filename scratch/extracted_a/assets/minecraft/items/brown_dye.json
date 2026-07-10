@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 500.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/cardboard_box"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/brown_dye"
+    }
+  }
+}

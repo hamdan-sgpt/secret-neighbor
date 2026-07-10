@@ -1,0 +1,59 @@
+{
+  "textures": {
+    "iron": "block/materials/iron_rust",
+    "trigger": "block/materials/red"
+  },
+  "elements": [
+    {
+      "__comment": "Base Plate",
+      "from": [3, 0, 3],
+      "to": [13, 1.5, 13],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#iron"}
+      }
+    },
+    {
+      "__comment": "Left Jaw",
+      "from": [3, 1.5, 7],
+      "to": [5, 5, 9],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#iron"}
+      }
+    },
+    {
+      "__comment": "Right Jaw",
+      "from": [11, 1.5, 7],
+      "to": [13, 5, 9],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#iron"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#iron"}
+      }
+    },
+    {
+      "__comment": "Trigger Center",
+      "from": [7, 1.5, 7],
+      "to": [9, 3, 9],
+      "faces": {
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#trigger"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#trigger"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#trigger"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#trigger"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#trigger"}
+      }
+    }
+  ]
+}

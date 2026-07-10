@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/paper"
+  },
+  "overrides": [
+    {"predicate": {"custom_model_data": 1000}, "model": "minecraft:item/exit_sign_0"},
+    {"predicate": {"custom_model_data": 1001}, "model": "minecraft:item/exit_sign_1"},
+    {"predicate": {"custom_model_data": 1002}, "model": "minecraft:item/exit_sign_2"},
+    {"predicate": {"custom_model_data": 1003}, "model": "minecraft:item/exit_sign_3"},
+    {"predicate": {"custom_model_data": 1004}, "model": "minecraft:item/exit_sign_4"},
+    {"predicate": {"custom_model_data": 1005}, "model": "minecraft:item/exit_sign_5"},
+    {"predicate": {"custom_model_data": 1006}, "model": "minecraft:item/exit_sign_6"},
+    {"predicate": {"custom_model_data": 1007}, "model": "minecraft:item/exit_sign_7"},
+    {"predicate": {"custom_model_data": 1008}, "model": "minecraft:item/exit_sign_8"},
+    {"predicate": {"custom_model_data": 1009}, "model": "minecraft:item/guide_poster"},
+    {"predicate": {"custom_model_data": 1010}, "model": "minecraft:item/cctv"},
+    {"predicate": {"custom_model_data": 1011}, "model": "minecraft:item/fire_extinguisher"},
+    {"predicate": {"custom_model_data": 1012}, "model": "minecraft:item/trash_can"},
+    {"predicate": {"custom_model_data": 1013}, "model": "minecraft:item/vending_machine"},
+    {"predicate": {"custom_model_data": 1014}, "model": "minecraft:item/bench"},
+    {"predicate": {"custom_model_data": 1015}, "model": "minecraft:item/vending_machine_anomaly"},
+    {"predicate": {"custom_model_data": 1016}, "model": "minecraft:item/poster_1"},
+    {"predicate": {"custom_model_data": 1017}, "model": "minecraft:item/poster_2"},
+    {"predicate": {"custom_model_data": 1018}, "model": "minecraft:item/poster_3"},
+    {"predicate": {"custom_model_data": 1019}, "model": "minecraft:item/poster_4"},
+    {"predicate": {"custom_model_data": 1020}, "model": "minecraft:item/poster_5"},
+    {"predicate": {"custom_model_data": 1021}, "model": "minecraft:item/poster_eyes_normal"},
+    {"predicate": {"custom_model_data": 1022}, "model": "minecraft:item/poster_eyes_anomaly"},
+    {"predicate": {"custom_model_data": 1023}, "model": "minecraft:item/poster_eyes_left"}
+  ]
+}

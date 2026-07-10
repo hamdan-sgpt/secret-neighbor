@@ -1,0 +1,47 @@
+{
+  "textures": {
+    "wood": "block/materials/leather",
+    "band": "block/materials/rubber"
+  },
+  "elements": [
+    {
+      "__comment": "Handle",
+      "from": [7.5, 0, 7.5],
+      "to": [8.5, 8, 8.5],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#wood"}
+      }
+    },
+    {
+      "__comment": "Fork",
+      "from": [6, 8, 6.5],
+      "to": [10, 10, 9.5],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#wood"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#wood"}
+      }
+    },
+    {
+      "__comment": "Rubber Band",
+      "from": [5.5, 10, 7.5],
+      "to": [10.5, 10.5, 8.5],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#band"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#band"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#band"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#band"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#band"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#band"}
+      }
+    }
+  ]
+}

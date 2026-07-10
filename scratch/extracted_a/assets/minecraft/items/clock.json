@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 207.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/decoy_console"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/clock"
+    }
+  }
+}

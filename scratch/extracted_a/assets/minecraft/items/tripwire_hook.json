@@ -1,0 +1,103 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 100.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/key_red"
+        }
+      },
+      {
+        "threshold": 101.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/key_blue"
+        }
+      },
+      {
+        "threshold": 102.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/key_green"
+        }
+      },
+      {
+        "threshold": 103.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/key_yellow"
+        }
+      },
+      {
+        "threshold": 104.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/key_purple"
+        }
+      },
+      {
+        "threshold": 105.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/key_orange"
+        }
+      },
+      {
+        "threshold": 106.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/keycard"
+        }
+      },
+      {
+        "threshold": 110.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/padlock_red"
+        }
+      },
+      {
+        "threshold": 111.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/padlock_blue"
+        }
+      },
+      {
+        "threshold": 112.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/padlock_green"
+        }
+      },
+      {
+        "threshold": 113.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/padlock_yellow"
+        }
+      },
+      {
+        "threshold": 114.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/padlock_purple"
+        }
+      },
+      {
+        "threshold": 115.0,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/padlock_orange"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/tripwire_hook"
+    }
+  }
+}

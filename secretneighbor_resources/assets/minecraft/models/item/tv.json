@@ -1,0 +1,538 @@
+{
+  "textures": {
+    "casing": "minecraft:block/throwable/tv_casing",
+    "screen": "minecraft:block/throwable/tv_screen"
+  },
+  "elements": [
+    {
+      "__comment": "TV Casing body",
+      "from": [
+        3,
+        4,
+        5
+      ],
+      "to": [
+        13,
+        12,
+        12
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            2,
+            2,
+            14,
+            12
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            2,
+            2,
+            14,
+            12
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            2,
+            2,
+            14,
+            12
+          ],
+          "texture": "#casing"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            14,
+            12
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            2,
+            2,
+            12,
+            12
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            2,
+            2,
+            12,
+            12
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "__comment": "Screen - inset on front face",
+      "from": [
+        4,
+        5,
+        4.5
+      ],
+      "to": [
+        12,
+        11,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#screen"
+        },
+        "south": {
+          "uv": [
+            2,
+            2,
+            14,
+            14
+          ],
+          "texture": "#screen"
+        }
+      }
+    },
+    {
+      "__comment": "Screen bezel top",
+      "from": [
+        3.5,
+        11.5,
+        4.5
+      ],
+      "to": [
+        12.5,
+        12,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            0,
+            15,
+            1
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            1,
+            0,
+            15,
+            1
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "__comment": "Screen bezel bottom",
+      "from": [
+        3.5,
+        4,
+        4.5
+      ],
+      "to": [
+        12.5,
+        4.5,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1,
+            15,
+            15,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "down": {
+          "uv": [
+            1,
+            15,
+            15,
+            16
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "__comment": "Stand/base left leg",
+      "from": [
+        4,
+        2,
+        7
+      ],
+      "to": [
+        5.5,
+        4,
+        10
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            4,
+            8,
+            8,
+            14
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            4,
+            12,
+            8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "south": {
+          "uv": [
+            4,
+            12,
+            8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            8,
+            12,
+            14,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            8,
+            12,
+            14,
+            16
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "__comment": "Stand/base right leg",
+      "from": [
+        10.5,
+        2,
+        7
+      ],
+      "to": [
+        12,
+        4,
+        10
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            4,
+            8,
+            8,
+            14
+          ],
+          "texture": "#casing"
+        },
+        "north": {
+          "uv": [
+            4,
+            12,
+            8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "south": {
+          "uv": [
+            4,
+            12,
+            8,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            8,
+            12,
+            14,
+            16
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            8,
+            12,
+            14,
+            16
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "__comment": "Antenna left",
+      "from": [
+        5,
+        12,
+        8
+      ],
+      "to": [
+        5.5,
+        15,
+        8.5
+      ],
+      "rotation": {
+        "angle": -22.5,
+        "axis": "z",
+        "origin": [
+          5.25,
+          12,
+          8.25
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            7,
+            0,
+            8,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "south": {
+          "uv": [
+            7,
+            0,
+            8,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            7,
+            0,
+            8,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            7,
+            0,
+            8,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            7,
+            7,
+            8,
+            8
+          ],
+          "texture": "#casing"
+        }
+      }
+    },
+    {
+      "__comment": "Antenna right",
+      "from": [
+        10.5,
+        12,
+        8
+      ],
+      "to": [
+        11,
+        15,
+        8.5
+      ],
+      "rotation": {
+        "angle": 22.5,
+        "axis": "z",
+        "origin": [
+          10.75,
+          12,
+          8.25
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            8,
+            0,
+            9,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "south": {
+          "uv": [
+            8,
+            0,
+            9,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "west": {
+          "uv": [
+            8,
+            0,
+            9,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "east": {
+          "uv": [
+            8,
+            0,
+            9,
+            6
+          ],
+          "texture": "#casing"
+        },
+        "up": {
+          "uv": [
+            8,
+            7,
+            9,
+            8
+          ],
+          "texture": "#casing"
+        }
+      }
+    }
+  ],
+  "display": {
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        -1,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2,
+        0
+      ],
+      "scale": [
+        0.35,
+        0.35,
+        0.35
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.38,
+        0.38,
+        0.38
+      ]
+    }
+  }
+}

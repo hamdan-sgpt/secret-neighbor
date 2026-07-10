@@ -1,0 +1,15 @@
+# Secret Neighbor Map Loader Config
+world-name: "secret_neighbor_map_2"
+lobby-spawn:
+  x: 88.088
+  y: -60.0
+  z: -10.996
+  yaw: 0.0
+  pitch: 0.0
+
+# HTTP server settings to serve the resource pack
+resourcepack-host: "basic-7.alstore.space"
+resourcepack-port: 22284
+
+# Lokasi folder template map di server (gunakan relative path agar aman di panel Pterodactyl)
+map-folder-path: "plugins/SecretNeighbor/map_template"

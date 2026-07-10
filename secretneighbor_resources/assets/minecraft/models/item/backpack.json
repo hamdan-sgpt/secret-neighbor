@@ -1,0 +1,57 @@
+{
+  "textures": {
+    "fabric": "block/materials/fabric_green",
+    "buckle": "block/materials/silver"
+  },
+  "elements": [
+    {
+      "__comment": "Backpack Body",
+      "from": [4, 2, 5],
+      "to": [12, 13, 11],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#fabric"}
+      }
+    },
+    {
+      "__comment": "Front Pocket",
+      "from": [5, 3, 4],
+      "to": [11, 8, 5],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#fabric"}
+      }
+    },
+    {
+      "__comment": "Flap",
+      "from": [4, 13, 5],
+      "to": [12, 14, 8],
+      "faces": {
+        "down":  {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "north": {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "west":  {"uv": [0, 0, 16, 16], "texture": "#fabric"},
+        "east":  {"uv": [0, 0, 16, 16], "texture": "#fabric"}
+      }
+    },
+    {
+      "__comment": "Buckle",
+      "from": [7, 13, 5.5],
+      "to": [9, 14.5, 6],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#buckle"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#buckle"},
+        "up":    {"uv": [0, 0, 16, 16], "texture": "#buckle"}
+      }
+    }
+  ]
+}

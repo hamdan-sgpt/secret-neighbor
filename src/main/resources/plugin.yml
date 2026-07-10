@@ -1,0 +1,21 @@
+name: SecretNeighbor
+version: 1.0.0
+main: com.secretneighbor.SecretNeighborPlugin
+api-version: '1.21'
+author: SecretNeighbor Team
+description: Secret Neighbor Map Loader Plugin
+softdepend: [PlaceholderAPI, ProtocolLib]
+
+commands:
+  sn:
+    description: SecretNeighbor player commands
+    usage: /<command> [subcommand]
+  sna:
+    description: SecretNeighbor admin commands
+    usage: /<command> [subcommand]
+    permission: secretneighbor.admin
+
+permissions:
+  secretneighbor.admin:
+    description: Allows using SecretNeighbor admin commands
+    default: op

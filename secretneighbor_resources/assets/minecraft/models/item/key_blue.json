@@ -1,0 +1,112 @@
+{
+	"__comment": "Designed by KoolCatTV with Cubik Studio - https://cubik.studio",
+	"textures": {
+		"particle": "block/materials/blue",
+		"texture": "block/materials/blue",
+		"silver": "block/materials/silver"
+	},
+	"elements": [ 	 
+		{
+			"__comment": "Key stick 1",
+			"from": [ 7.75, 7.25, 1.375 ],
+			"to": [ 8.25, 7.75, 4.875 ],
+			"faces": {
+				"down": { "uv": [ 7.75, 10.5, 8.25, 16 ], "texture": "#silver" },
+				"up": { "uv": [ 7.75, 0, 8.25, 5.5 ], "texture": "#silver" },
+				"north": { "uv": [ 7.75, 6.25, 8.25, 6.75 ], "texture": "#silver" },
+				"south": { "uv": [ 7.75, 6.25, 8.25, 6.75 ], "texture": "#silver" },
+				"west": { "uv": [ 0, 6.25, 5.5, 6.75 ], "texture": "#silver" },
+				"east": { "uv": [ 10.5, 6.25, 16, 6.75 ], "texture": "#silver" }
+			}
+		},
+		{
+			"__comment": "Key Stick 2",
+			"from": [ 6.75, 7.25, 1.5 ],
+			"to": [ 7.75, 7.75, 2 ],
+			"faces": {
+				"down": { "uv": [ 6.75, 13.5, 7.75, 14 ], "texture": "#silver" },
+				"up": { "uv": [ 6.75, 2, 7.75, 2.5 ], "texture": "#silver" },
+				"north": { "uv": [ 8.25, 8.5, 9.25, 9 ], "texture": "#silver" },
+				"south": { "uv": [ 6.75, 8.5, 7.75, 9 ], "texture": "#silver" },
+				"west": { "uv": [ 2, 8.5, 2.5, 9 ], "texture": "#silver" },
+				"east": { "uv": [ 13.5, 8.5, 14, 9 ], "texture": "#silver" }
+			}
+		},
+		{
+			"__comment": "Key Stick 2",
+			"from": [ 6.75, 7.25, 2.375 ],
+			"to": [ 7.75, 7.75, 2.875 ],
+			"faces": {
+				"down": { "uv": [ 6.75, 12.625, 7.75, 13.125 ], "texture": "#silver" },
+				"up": { "uv": [ 6.75, 2.875, 7.75, 3.375 ], "texture": "#silver" },
+				"north": { "uv": [ 8.25, 8.5, 9.25, 9 ], "texture": "#silver" },
+				"south": { "uv": [ 6.75, 8.5, 7.75, 9 ], "texture": "#silver" },
+				"west": { "uv": [ 2.875, 8.5, 3.375, 9 ], "texture": "#silver" },
+				"east": { "uv": [ 12.625, 8.5, 13.125, 9 ], "texture": "#silver" }
+			}
+		},
+		{
+			"__comment": "Key Loop 1",
+			"from": [ 7, 7, 4.875 ],
+			"to": [ 9, 8, 5.375 ],
+			"faces": {
+				"down": { "uv": [ 6.75, 7.5, 9.25, 8 ], "texture": "#texture" },
+				"up": { "uv": [ 6.75, 8, 9.25, 8.5 ], "texture": "#texture" },
+				"north": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" },
+				"south": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" },
+				"west": { "uv": [ 8, 8.25, 8.5, 9.25 ], "texture": "#texture" },
+				"east": { "uv": [ 7.5, 8.25, 8, 9.25 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Key Loop 2",
+			"from": [ 6.75, 7, 5.125 ],
+			"to": [ 7.25, 8, 7.125 ],
+			"faces": {
+				"down": { "uv": [ 6.75, 7.5, 9.25, 8 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 6.75, 8, 9.25, 8.5 ], "texture": "#texture", "rotation": 90 },
+				"north": { "uv": [ 8, 8.25, 8.5, 9.25 ], "texture": "#texture" },
+				"south": { "uv": [ 7.5, 8.25, 8, 9.25 ], "texture": "#texture" },
+				"west": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" },
+				"east": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Key Loop 3",
+			"from": [ 7, 7, 6.875 ],
+			"to": [ 9, 8, 7.375 ],
+			"faces": {
+				"down": { "uv": [ 6.75, 7.5, 9.25, 8 ], "texture": "#texture" },
+				"up": { "uv": [ 6.75, 8, 9.25, 8.5 ], "texture": "#texture" },
+				"north": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" },
+				"south": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" },
+				"west": { "uv": [ 8, 8.25, 8.5, 9.25 ], "texture": "#texture" },
+				"east": { "uv": [ 7.5, 8.25, 8, 9.25 ], "texture": "#texture" }
+			}
+		},
+		{
+			"__comment": "Key Loop 4",
+			"from": [ 8.75, 7, 5.125 ],
+			"to": [ 9.25, 8, 7.125 ],
+			"faces": {
+				"down": { "uv": [ 6.75, 7.5, 9.25, 8 ], "texture": "#texture", "rotation": 270 },
+				"up": { "uv": [ 6.75, 8, 9.25, 8.5 ], "texture": "#texture", "rotation": 90 },
+				"north": { "uv": [ 8, 8.25, 8.5, 9.25 ], "texture": "#texture" },
+				"south": { "uv": [ 7.5, 8.25, 8, 9.25 ], "texture": "#texture" },
+				"west": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" },
+				"east": { "uv": [ 6.75, 8.25, 9.25, 9.25 ], "texture": "#texture" }
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation":  [ 88, 0, 0 ],
+			"translation":  [ 0.0003, -6.956, 0 ],
+			"scale":  [ 1.973, 1.973, 1.9739 ]
+		},
+		"fixed": {
+			"rotation":  [ -88, 0, 0 ],
+			"scale":  [ 2.1478, 2.1478, 2.1478 ]
+		}
+	}
+}

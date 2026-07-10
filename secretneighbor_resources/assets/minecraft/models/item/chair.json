@@ -1,0 +1,729 @@
+{
+  "textures": {
+    "wood": "minecraft:block/throwable/chair"
+  },
+  "elements": [
+    {
+      "__comment": "Seat Cushion/Board",
+      "from": [
+        3,
+        7,
+        3
+      ],
+      "to": [
+        13,
+        8,
+        13
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            3,
+            13,
+            13
+          ],
+          "texture": "#wood"
+        },
+        "up": {
+          "uv": [
+            3,
+            3,
+            13,
+            13
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            7,
+            13,
+            8
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Backrest Board",
+      "from": [
+        3,
+        8,
+        12
+      ],
+      "to": [
+        13,
+        17,
+        13
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            3,
+            12,
+            13,
+            13
+          ],
+          "texture": "#wood"
+        },
+        "down": {
+          "uv": [
+            3,
+            12,
+            13,
+            13
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            3,
+            8,
+            13,
+            17
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            3,
+            8,
+            13,
+            17
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            12,
+            8,
+            13,
+            17
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            12,
+            8,
+            13,
+            17
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Leg Front-Left",
+      "from": [
+        3,
+        0,
+        3
+      ],
+      "to": [
+        4.5,
+        7,
+        4.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            3,
+            4.5,
+            4.5
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Leg Front-Right",
+      "from": [
+        11.5,
+        0,
+        3
+      ],
+      "to": [
+        13,
+        7,
+        4.5
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            11.5,
+            3,
+            13,
+            4.5
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Leg Back-Left",
+      "from": [
+        3,
+        0,
+        11.5
+      ],
+      "to": [
+        4.5,
+        7,
+        13
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            11.5,
+            4.5,
+            13
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            0,
+            4.5,
+            7
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Leg Back-Right",
+      "from": [
+        11.5,
+        0,
+        11.5
+      ],
+      "to": [
+        13,
+        7,
+        13
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            11.5,
+            11.5,
+            13,
+            13
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            11.5,
+            0,
+            13,
+            7
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Left Armrest",
+      "from": [
+        2.5,
+        10,
+        3
+      ],
+      "to": [
+        3.5,
+        11,
+        12
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            2.5,
+            3,
+            3.5,
+            12
+          ],
+          "texture": "#wood"
+        },
+        "down": {
+          "uv": [
+            2.5,
+            3,
+            3.5,
+            12
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            2.5,
+            10,
+            3.5,
+            11
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            2.5,
+            10,
+            3.5,
+            11
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            10,
+            12,
+            11
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            10,
+            12,
+            11
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Right Armrest",
+      "from": [
+        12.5,
+        10,
+        3
+      ],
+      "to": [
+        13.5,
+        11,
+        12
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            12.5,
+            3,
+            13.5,
+            12
+          ],
+          "texture": "#wood"
+        },
+        "down": {
+          "uv": [
+            12.5,
+            3,
+            13.5,
+            12
+          ],
+          "texture": "#wood"
+        },
+        "north": {
+          "uv": [
+            12.5,
+            10,
+            13.5,
+            11
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            12.5,
+            10,
+            13.5,
+            11
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            10,
+            12,
+            11
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            10,
+            12,
+            11
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Armrest Support Left Front",
+      "from": [
+        2.5,
+        8,
+        3
+      ],
+      "to": [
+        3.5,
+        10,
+        4.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2.5,
+            8,
+            3.5,
+            10
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            2.5,
+            8,
+            3.5,
+            10
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            8,
+            4.5,
+            10
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            8,
+            4.5,
+            10
+          ],
+          "texture": "#wood"
+        }
+      }
+    },
+    {
+      "__comment": "Armrest Support Right Front",
+      "from": [
+        12.5,
+        8,
+        3
+      ],
+      "to": [
+        13.5,
+        10,
+        4.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            12.5,
+            8,
+            13.5,
+            10
+          ],
+          "texture": "#wood"
+        },
+        "south": {
+          "uv": [
+            12.5,
+            8,
+            13.5,
+            10
+          ],
+          "texture": "#wood"
+        },
+        "west": {
+          "uv": [
+            3,
+            8,
+            4.5,
+            10
+          ],
+          "texture": "#wood"
+        },
+        "east": {
+          "uv": [
+            3,
+            8,
+            4.5,
+            10
+          ],
+          "texture": "#wood"
+        }
+      }
+    }
+  ],
+  "display": {
+    "head": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "translation": [
+        0,
+        -1,
+        0
+      ],
+      "scale": [
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        0.25,
+        0.25,
+        0.25
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        75,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        2.5,
+        0
+      ],
+      "scale": [
+        0.375,
+        0.375,
+        0.375
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "translation": [
+        0,
+        -1,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    }
+  }
+}
