@@ -340,7 +340,7 @@ public class AtmosphereManager {
                 if (!activeChasePlayers.contains(child.getUniqueId())) {
                     child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_ANGRY, 0.4f, 1.2f);
                     // Play custom chase sound attached directly to the child so it follows them
-                    child.playSound(child, "secretneighbor.chase", org.bukkit.SoundCategory.RECORDS, 0.8f, 1.0f);
+                    child.playSound(child, "secretneighbor.chase", org.bukkit.SoundCategory.RECORDS, 0.45f, 1.0f);
                 }
             }
         }
