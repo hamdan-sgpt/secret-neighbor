@@ -1,0 +1,49 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_1.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue001"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_2.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue002"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_3.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue003"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_4.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue004"
+      ]
+    },
+    {
+      "type": "bitmap",
+      "file": "minecraft:font/vignette_5.png",
+      "ascent": 500,
+      "height": 1000,
+      "chars": [
+        "\ue005"
+      ]
+    }
+  ]
+}

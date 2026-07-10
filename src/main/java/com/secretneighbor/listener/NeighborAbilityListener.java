@@ -350,12 +350,9 @@ public class NeighborAbilityListener implements Listener {
                 return;
             }
 
-            // Apply effects to child: freeze them while grabbed & start vision constriction
+            // Apply effects to child: freeze them while grabbed
             child.addPotionEffect(new PotionEffect(PotionEffectType.MINING_FATIGUE, 99999, 4, false, false));
             child.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 99999, 4, false, false));
-            child.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 99999, 0, false, false));
-            child.addPotionEffect(new PotionEffect(PotionEffectType.DARKNESS, 99999, 0, false, false));
-            child.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 99999, 0, false, false));
 
             // Mount child as passenger of Neighbor
             neighbor.addPassenger(child);
@@ -459,17 +456,20 @@ public class NeighborAbilityListener implements Listener {
                 ticks += 2;
                 childSnp.incrementGrabProgress();
 
-                // Progressive vision constriction (Slowness increases FOV zoom, simulating tunnel vision)
-                int slownessAmp = 0;
-                if (ticks >= 40) {
-                    slownessAmp = 6; // Slowness VII (extreme zoom)
-                } else if (ticks >= 20) {
-                    slownessAmp = 3; // Slowness IV (medium zoom)
+                // Progressive vision constriction using custom font vignettes (no potion effects)
+                String vignetteChar;
+                if (ticks < 12) {
+                    vignetteChar = "\uE001";
+                } else if (ticks < 24) {
+                    vignetteChar = "\uE002";
+                } else if (ticks < 36) {
+                    vignetteChar = "\uE003";
+                } else if (ticks < 48) {
+                    vignetteChar = "\uE004";
+                } else {
+                    vignetteChar = "\uE005";
                 }
-                PotionEffect currentSlow = ch.getPotionEffect(PotionEffectType.SLOWNESS);
-                if (currentSlow == null || currentSlow.getAmplifier() != slownessAmp) {
-                    ch.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 99999, slownessAmp, false, false));
-                }
+                ch.sendTitle(vignetteChar, "", 0, 5, 0);
 
                 int percent = (ticks * 100) / CAPTURE_TICKS;
                 percent = Math.min(percent, 100);
@@ -493,9 +493,7 @@ public class NeighborAbilityListener implements Listener {
                     // Clear grab effects
                     ch.removePotionEffect(PotionEffectType.MINING_FATIGUE);
                     ch.removePotionEffect(PotionEffectType.WEAKNESS);
-                    ch.removePotionEffect(PotionEffectType.BLINDNESS);
-                    ch.removePotionEffect(PotionEffectType.DARKNESS);
-                    ch.removePotionEffect(PotionEffectType.SLOWNESS);
+                    ch.clearTitle();
 
                     childSnp.setGrabbed(false);
                     childSnp.setGrabbedByUuid(null);
@@ -562,9 +560,7 @@ public class NeighborAbilityListener implements Listener {
             // Clear grab effects
             child.removePotionEffect(PotionEffectType.MINING_FATIGUE);
             child.removePotionEffect(PotionEffectType.WEAKNESS);
-            child.removePotionEffect(PotionEffectType.BLINDNESS);
-            child.removePotionEffect(PotionEffectType.DARKNESS);
-            child.removePotionEffect(PotionEffectType.SLOWNESS);
+            child.clearTitle();
 
             if (!"game_end".equals(reason) && !"disconnect".equals(reason)) {
                 // Release animation — throw child away
