@@ -106,7 +106,7 @@ public class AtmosphereManager {
         for (UUID uuid : activeChasePlayers) {
             Player p = Bukkit.getPlayer(uuid);
             if (p != null) {
-                p.stopSound("secretneighbor.chase");
+                p.stopSound("secretneighbor.chase", org.bukkit.SoundCategory.MUSIC);
             }
         }
         activeChasePlayers.clear();
@@ -309,25 +309,25 @@ public class AtmosphereManager {
             if (dist < 20.0) {
                 float volume = isDisguised ? 0.15f : 0.3f;
                 float pitch = 0.6f;
-                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, volume, pitch);
+                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, org.bukkit.SoundCategory.MUSIC, volume, pitch);
             }
 
             // Tier 2: Medium proximity (< 12 blocks)
             if (dist < 12.0) {
                 float volume = isDisguised ? 0.35f : 0.6f;
                 float pitch = 1.0f;
-                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, volume, pitch);
+                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, org.bukkit.SoundCategory.MUSIC, volume, pitch);
             }
 
             // Tier 3: Close danger (< 6 blocks)
             if (dist < 6.0) {
                 float volume = isBapake ? 1.2f : 0.9f;
                 float pitch = 1.5f;
-                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, volume, pitch);
+                child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, org.bukkit.SoundCategory.MUSIC, volume, pitch);
                 // Double heartbeat for urgency
                 Bukkit.getScheduler().runTaskLater(plugin, () -> {
                     if (child.isOnline()) {
-                        child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, volume * 0.8f, 1.8f);
+                        child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_HEARTBEAT, org.bukkit.SoundCategory.MUSIC, volume * 0.8f, 1.8f);
                     }
                 }, 5L);
             }
@@ -338,9 +338,9 @@ public class AtmosphereManager {
                 
                 // Play warning roar and start chase BGM if they just entered chase
                 if (!activeChasePlayers.contains(child.getUniqueId())) {
-                    child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_ANGRY, 0.4f, 1.2f);
+                    child.playSound(child.getLocation(), Sound.ENTITY_WARDEN_ANGRY, org.bukkit.SoundCategory.MUSIC, 0.4f, 1.2f);
                     // Play custom chase sound attached directly to the child so it follows them
-                    child.playSound(child, "secretneighbor.chase", org.bukkit.SoundCategory.RECORDS, 0.45f, 1.0f);
+                    child.playSound(child, "secretneighbor.chase", org.bukkit.SoundCategory.MUSIC, 0.45f, 1.0f);
                 }
             }
         }
@@ -350,7 +350,7 @@ public class AtmosphereManager {
             if (!currentChase.contains(uuid)) {
                 Player p = Bukkit.getPlayer(uuid);
                 if (p != null) {
-                    p.stopSound("secretneighbor.chase");
+                    p.stopSound("secretneighbor.chase", org.bukkit.SoundCategory.MUSIC);
                 }
                 activeChasePlayers.remove(uuid);
             }
