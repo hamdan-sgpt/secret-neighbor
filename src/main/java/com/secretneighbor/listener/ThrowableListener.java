@@ -62,7 +62,7 @@ public class ThrowableListener implements Listener {
         if (cmd >= 1010 && cmd <= 1016) return true; // Tools & Cards
         if (cmd >= 1100 && cmd <= 1110) return true; // Throwables
         if (cmd >= 1200 && cmd <= 1207) return true; // Child class items
-        if (cmd >= 1300 && cmd <= 1302) return true; // Neighbor items (Bear Trap, Masks)
+        if (cmd >= 1300 && cmd <= 1304) return true; // Neighbor items (Bear Trap, Masks, Rage)
         return false;
     }
 

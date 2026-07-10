@@ -1,6 +1,7 @@
 {
   "textures": {
-    "fabric": "minecraft:block/throwable/hat"
+    "fabric": "minecraft:block/throwable/hat",
+    "dark": "minecraft:block/materials/black"
   },
   "elements": [
     {
@@ -212,7 +213,7 @@
             13,
             13
           ],
-          "texture": "#fabric"
+          "texture": "#dark"
         },
         "south": {
           "uv": [
@@ -221,7 +222,7 @@
             13,
             13
           ],
-          "texture": "#fabric"
+          "texture": "#dark"
         },
         "west": {
           "uv": [
@@ -230,7 +231,7 @@
             13,
             13
           ],
-          "texture": "#fabric"
+          "texture": "#dark"
         },
         "east": {
           "uv": [
@@ -239,7 +240,7 @@
             13,
             13
           ],
-          "texture": "#fabric"
+          "texture": "#dark"
         }
       }
     }
