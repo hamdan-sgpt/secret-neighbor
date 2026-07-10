@@ -325,21 +325,27 @@ public class NeighborAbilityListener implements Listener {
         childSnp.setGrabbedByUuid(player.getUniqueId());
         childSnp.setStruggleCount(0);
         childSnp.setGrabStartTime(System.currentTimeMillis());
-        
         // Show first vignette frame instantly when grab succeeds
         targetChild.sendTitle("\uE001", "", 0, 10, 0);
+
+        // Freeze child instantly when grab starts to prevent counter attacks
+        targetChild.addPotionEffect(new PotionEffect(PotionEffectType.MINING_FATIGUE, 99999, 4, false, false));
+        targetChild.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 99999, 4, false, false));
 
         // Heavy Bones: Extra slowness if Bagger
         boolean isBagger = childSnp.getChildClass() == ChildClass.BAGGER;
         if (isBagger) {
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 80, 3)); // 4s Slowness IV
+            player.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 120, 3)); // 6s Slowness IV (matching 6s duration)
             player.sendMessage("§d§l[Heavy Bones] §eThis child is HEAVY! You can barely move!");
         }
 
         // Apply slowness to Neighbor while carrying
-        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 80, 1)); // Slowness II for carrying
+        player.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 120, 1)); // Slowness II for carrying (6s)
 
-        // Mount the child onto the Neighbor after a short delay (2 ticks for lunge to land)
+        // Start the capture countdown task immediately (0L delay, runs every 2 ticks)
+        startGrabCountdown(player, targetChild, snp, childSnp, isBagger);
+
+        // Mount the child onto the Neighbor after a short delay (3 ticks for lunge to land)
         final Player fTarget = targetChild;
         final SNPlayer fChildSnp = childSnp;
 
@@ -353,17 +359,12 @@ public class NeighborAbilityListener implements Listener {
                 return;
             }
 
-            // Apply effects to child: freeze them while grabbed
-            child.addPotionEffect(new PotionEffect(PotionEffectType.MINING_FATIGUE, 99999, 4, false, false));
-            child.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 99999, 4, false, false));
-
             // Mount child as passenger of Neighbor
             neighbor.addPassenger(child);
 
             // Messages
-            neighbor.sendMessage("§c§l[GRAB!] §eGrabbed §6" + child.getName() + "§e! Hold for 3 seconds to capture!");
+            neighbor.sendMessage("§c§l[GRAB!] §eGrabbed §6" + child.getName() + "§e! Hold for 6 seconds to capture!");
             child.sendMessage("§c§l[GRABBED!] §cThe Neighbor is holding you! Your teammates must throw items to save you!");
-            child.sendTitle("§c§l✋ GRABBED!", "§7Spam JUMP to struggle! Friends must help!", 5, 60, 10);
 
             // Alert nearby players with directional hint
             for (SNPlayer otherSnp : plugin.getGameManager().getPlayers().values()) {
@@ -376,10 +377,7 @@ public class NeighborAbilityListener implements Listener {
                 }
             }
 
-            snp.setCooldown("grab", 6);
-
-            // Start the capture countdown task
-            startGrabCountdown(neighbor, child, snp, fChildSnp, isBagger);
+            snp.setCooldown("grab", 8); // 8 seconds cooldown
 
         }, 3L); // 3 tick delay for lunge
     }
@@ -392,7 +390,7 @@ public class NeighborAbilityListener implements Listener {
     private void startGrabCountdown(Player neighbor, Player child, SNPlayer neighborSnp, SNPlayer childSnp, boolean isBagger) {
         new BukkitRunnable() {
             int ticks = 0;
-            final int CAPTURE_TICKS = 100; // 5 seconds at 2-tick intervals = 100 ticks
+            final int CAPTURE_TICKS = 120; // 6 seconds at 2-tick intervals = 120 ticks
             int lastStruggleCount = 0;
 
             @Override
@@ -459,9 +457,9 @@ public class NeighborAbilityListener implements Listener {
                 ticks += 2;
                 childSnp.incrementGrabProgress();
 
-                // Progressive vision constriction using custom font vignettes (50 frames)
+                // Progressive vision constriction using custom font vignettes (60 frames)
                 int frameIndex = (ticks / 2) + 1;
-                frameIndex = Math.min(50, Math.max(1, frameIndex));
+                frameIndex = Math.min(60, Math.max(1, frameIndex));
                 char vignetteChar = (char) (0xE000 + frameIndex);
                 ch.sendTitle(String.valueOf(vignetteChar), "", 0, 5, 0);
 
